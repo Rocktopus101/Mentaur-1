@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentaur</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Mentaur</h2>
+          <div class="toggle"></div>
+        </header>
+        <video src="pexels-rodnae-productions-5924017.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+          <h2>Plan Less, Work More</h2> 
+          <h3>By Team X08</h3>
+          <p>A One-stop solution for all your project management needs. It includes Calender for deadlines, Scrumboard for team/work management, Notifications and Reminders for all your work.All of this seamlessly working together on our database, So you can focus more on your project goals. </p>
+          <a href="forms.html">Add a Project</a>
+        </div>
+        <ul class="social">
+          <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="forms.html">Add a Project</a></li>
+          <li><a href="calendar.html">Calender</a></li>
+          <li><a href="scrum.html">Scrum Board</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div> 
+      <script src="home.js"></script>
+      <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "84e0c3f1-5020-4bc5-a62a-622c835afbb5", // The ID of this integration.
+            region: "eu-de", // The region your integration is hosted in.
+            serviceInstanceID: "5e951031-a88e-4428-abaa-17e5f21a91e3", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+            (window.watsonAssistantChatOptions.clientVersion || 'latest') +
+            "/WatsonAssistantChatEntry.js"
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
